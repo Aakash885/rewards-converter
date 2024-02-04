@@ -2,19 +2,15 @@ import java.util.Scanner;
 
 public class RewardsConverter {
     public static void main(String[] args) {
-        // Main.java package
         class RewardValue {
             private double cashValue;
             private double milesValue;
 
-            // Constructor that accepts cash value
             public RewardValue(double cashValue) {
                 this.cashValue = cashValue;
-                // Convert cash to miles at a rate of 0.0035
                 this.milesValue = cashValue / 0.0035;
             }
 
-            // Constructor that accepts miles value
             public RewardValue(double milesValue, boolean isMiles) {
                 if (isMiles) {
                     this.milesValue = milesValue;
